@@ -26,6 +26,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 var _a;
 exports.__esModule = true;
 exports.Vehicle = exports.add = exports.value1 = void 0;
+var core_js_1 = require("core-js");
 console.log("Hello World");
 //let a=10;
 //console.log(a+a);
@@ -255,3 +256,8 @@ var Vehicle = /** @class */ (function () {
     return Vehicle;
 }());
 exports.Vehicle = Vehicle;
+var myMap = new core_js_1.Map();
+myMap.set("Mohan", 1);
+myMap.set("Naveen", 2);
+myMap.set("Pranav", 3);
+console.log(myMap);

@@ -1,3 +1,6 @@
+import { Map } from "core-js";
+import { map } from "core-js/es6/array";
+
 console.log("Hello World");
 
 //let a=10;
@@ -278,4 +281,14 @@ export class Vehicle{
         
     }
 }
+
+
+let myMap= new Map();
+
+myMap.set("Mohan",1);
+myMap.set("Naveen",2);
+myMap.set("Pranav",3);
+
+console.log(myMap);
+
 
