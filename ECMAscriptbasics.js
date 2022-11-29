@@ -25,6 +25,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 };
 var _a;
 exports.__esModule = true;
+exports.Vehicle = exports.add = exports.value1 = void 0;
 console.log("Hello World");
 //let a=10;
 //console.log(a+a);
@@ -239,5 +240,18 @@ var Employee = /** @class */ (function (_super) {
 }(Person2));
 var e = new Employee();
 console.log(e.getID());
-var value1 = 100;
-exports["default"] = value1;
+exports.value1 = 100;
+function add(a, b) {
+    return a + b;
+}
+exports.add = add;
+var Vehicle = /** @class */ (function () {
+    function Vehicle() {
+        console.log("Vehicle Constructor");
+    }
+    Vehicle.prototype.drive = function () {
+        console.log("Vehicle is moving");
+    };
+    return Vehicle;
+}());
+exports.Vehicle = Vehicle;

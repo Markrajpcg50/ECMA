@@ -265,5 +265,17 @@ class Employee extends Person2{
 let e= new Employee();
 console.log(e.getID());
 
-let value1=100;
-export default value1;
+export let value1=100;
+export function add(a,b){
+    return a+b;
+}
+export class Vehicle{
+    constructor(){
+        console.log("Vehicle Constructor");
+    }
+    drive(){
+        console.log("Vehicle is moving");
+        
+    }
+}
+
